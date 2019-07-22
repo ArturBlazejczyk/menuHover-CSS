@@ -1,5 +1,12 @@
 const burger = document.querySelector(".burger");
 
-burger.addEventListener('click', function() {
-    burger.classList.toggle('active');
+const iconBurger = document.querySelector(".fa-bars");
+const iconX = document.querySelector(".fa-times");
+const column = document.querySelector("aside");
+
+burger.addEventListener('click', function(){
+    iconBurger.classList.toggle('show');
+    iconX.classList.toggle('show');
+    column.classList.toggle('show');
 })
+
