@@ -1,3 +1,8 @@
+.wrapper{
+    margin: 10px 80px;
+    transition: .3s;
+}
+
 .burger {
     position: absolute;
     top: 40px;
@@ -18,7 +23,7 @@ aside {
     left: -300px;
     width: 300px;
     background-color: black;
-    transition: .8s;
+    transition: .3s;
 }
 
 .fas{
@@ -31,4 +36,8 @@ i.show{
 
 aside.show{
     left: 0;
+}
+
+.wrapper.show{
+    padding-left: 300px;
 }
