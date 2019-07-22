@@ -1,4 +1,13 @@
-const burger = document.querySelector(".burger");
+// jQuerry
+
+$('.burger').on('click', function(){
+    $('.fas, aside').toggleClass('show');
+})
+
+
+// CLEAR JAVASCRIPT
+
+/* const burger = document.querySelector(".burger");
 
 const iconBurger = document.querySelector(".fa-bars");
 const iconX = document.querySelector(".fa-times");
@@ -8,5 +17,5 @@ burger.addEventListener('click', function(){
     iconBurger.classList.toggle('show');
     iconX.classList.toggle('show');
     column.classList.toggle('show');
-})
+}) */
 
