@@ -13,13 +13,12 @@
     transition: .3s linear;
 }
 
-.burger:hover {
-    cursor: pointer;
+.burger.active {
     transform: rotate(405deg);
 }
 
-.burger:hover+aside {
-    left: 0;
+.burger:hover {
+    cursor: pointer;
 }
 
 aside {
@@ -30,4 +29,8 @@ aside {
     width: 300px;
     background-color: black;
     transition: .8s;
+}
+
+.burger.active+aside {
+    left: 0;
 }
