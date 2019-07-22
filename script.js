@@ -1,3 +1,12 @@
+const burger = document.querySelector('.burger');
+const activeElement = document.querySelectorAll('.active');
+
+burger.addEventListener('click', function () {
+    for (let i = 0; i < activeElement.length; i++) {
+        activeElement[i].classList.toggle('show');
+    }
+})
+
 // jQuerry
 
 /* $('.burger').on('click', function(){
@@ -7,7 +16,7 @@
 
 // CLEAR JAVASCRIPT
 
-const burger = document.querySelector(".burger");
+/* const burger = document.querySelector(".burger");
 
 const iconBurger = document.querySelector(".fa-bars");
 const iconX = document.querySelector(".fa-times");
@@ -19,5 +28,5 @@ burger.addEventListener('click', function(){
     iconX.classList.toggle('show');
     column.classList.toggle('show');
     wrapper.classList.toggle('show');
-})
+}) */
 
